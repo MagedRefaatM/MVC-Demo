@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/vertical_guide_line1"
+        app:layout_constraintGuide_percent="0.04">
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/vertical_guide_line2"
+        app:layout_constraintGuide_percent="0.98">
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30"
+        android:id="@+id/vertical_guide_line3">
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6"
+        android:id="@+id/vertical_guide_line4">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_guide_line"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05">
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/horizontal_guide_line1"
+        app:layout_constraintGuide_percent="0.2">
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/horizontal_guide_line2"
+        app:layout_constraintGuide_percent="0.3">
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/horizontal_guide_line3"
+        app:layout_constraintGuide_percent="0.4">
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/horizontal_guide_line4"
+        app:layout_constraintGuide_percent="0.45">
+    </androidx.constraintlayout.widget.Guideline>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/horizontal_guide_line5"
+        app:layout_constraintGuide_percent="0.55">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <ImageView
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/image_view_logo"
+        android:contentDescription="@string/logo_image"
+        android:background="@drawable/img5"
+
+        app:layout_constraintTop_toBottomOf="@id/update_guide_line"
+        app:layout_constraintLeft_toRightOf="@id/vertical_guide_line3"
+        app:layout_constraintRight_toLeftOf="@id/vertical_guide_line4"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_guide_line1">
+
+    </ImageView>
+
+    <EditText
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/edit_text_name"
+        android:hint="@string/name_insertion"
+        android:textColorHint="@android:color/white"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        android:background="@null"
+
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guide_line1"
+        app:layout_constraintLeft_toRightOf="@id/vertical_guide_line1"
+        app:layout_constraintRight_toLeftOf="@id/vertical_guide_line2"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_guide_line2">
+
+    </EditText>
+
+    <EditText
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/edit_text_password"
+        android:hint="@string/password_insertion"
+        android:textColorHint="@android:color/white"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:inputType="textPassword"
+        android:importantForAutofill="no"
+        android:background="@null"
+
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guide_line2"
+        app:layout_constraintLeft_toRightOf="@id/vertical_guide_line1"
+        app:layout_constraintRight_toLeftOf="@id/vertical_guide_line2"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_guide_line3">
+
+    </EditText>
+
+    <Button
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/button_enter"
+        android:text="@string/enter"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="@android:color/white"
+
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guide_line4"
+        app:layout_constraintLeft_toRightOf="@id/vertical_guide_line3"
+        app:layout_constraintRight_toLeftOf="@id/vertical_guide_line4"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_guide_line5">
+
+    </Button>
+
+    <TextView
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_error"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="invisible"
+
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guide_line5"
+        app:layout_constraintLeft_toRightOf="@id/vertical_guide_line1"
+        app:layout_constraintRight_toLeftOf="@id/vertical_guide_line2">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
